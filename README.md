@@ -159,15 +159,15 @@ class App extends Component {
     }
   }
   
- changeHandler = event => {
-		this.setState({[event.target.name]:event.target.value})
-	}
+changeHandler = event => {
+    this.setState({[event.target.name]:event.target.value})
+}
   
-  render() {
+render() {
     return (
-      <input name="name" onChange={this.changeHandler} />
-			<input name="age" onChange={this.changeHandler} />
-			<p>Name: {this.state.name} Age: {this.state.age}</p>
+      	<input name="name" onChange={this.changeHandler} />
+	<input name="age" onChange={this.changeHandler} />
+	<p>Name: {this.state.name} Age: {this.state.age}</p>
     );
   }
 }
