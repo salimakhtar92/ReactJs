@@ -46,7 +46,9 @@ class App extends Component {
   }
 }
 
-Note: You should avoid to use arrow function inside ```JSX```. This line of code ```onClick={() => this.nameChangeHandler()}``` will always createing a new function when our component will re-render.
+Note: You should avoid to use arrow function inside ```JSX```. 
+This line of code ```onClick={() => this.nameChangeHandler()}``` will always createing a new function when our 
+component will re-render.
 ```
 ### 2. Right way to bind event handlers in React:
 
@@ -73,7 +75,7 @@ class App extends Component {
   }
 }
 ```
-B) Bind handler with fat arrow function
+B) One of the most efficient way to bind event handlers with fat arrow function see the code:
 ```
 import React, {Component} from 'react';
 
