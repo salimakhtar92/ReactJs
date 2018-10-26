@@ -22,10 +22,11 @@ class App extends Component {
   }
 }
 ```
+
 This is a dynamic binding inside ```render()``` method.
 In this case, when render() method is called second time, ```this.handleClick.bind(this)``` will be called and bind the handler again. This call will generate a brand-new handler, which is completely different than the handler used when render() was called the first time.
 Following is also a bad way to bind this with fat arrow function inside render():
-```
+
 import React, {Component} from 'react';
 
 class App extends Component {
